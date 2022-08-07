@@ -9,6 +9,8 @@ Stargaze is a [Cosmos](https://cosmos.network) zone (layer 1 proof-of-stake bloc
 
 ### Run a local, single-node chain
 
+It needs to use the Ubuntu environment.
+
 Requires [Go](https://golang.org/doc/install).
 
 ```sh

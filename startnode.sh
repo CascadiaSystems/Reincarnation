@@ -5,15 +5,6 @@ rm -rf $HOME/.starsd
 starsd config chain-id localnet-1
 starsd config keyring-backend test
 starsd config output json
-yes | starsd keys add validator
-yes | starsd keys add creator
-yes | starsd keys add investor
-yes | starsd keys add funder --pubkey "{\"@type\":\"/cosmos.crypto.secp256k1.PubKey\",\"key\":\"AtObiFVE4s+9+RX5SP8TN9r2mxpoaT4eGj9CJfK7VRzN\"}"
-VALIDATOR=$(starsd keys show validator -a)
-CREATOR=$(starsd keys show creator -a)
-INVESTOR=$(starsd keys show investor -a)
-FUNDER=$(starsd keys show funder -a)
-
 # setup chain
 starsd init stargaze --chain-id localnet-1
 # modify config for development
