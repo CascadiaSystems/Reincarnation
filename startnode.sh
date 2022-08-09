@@ -2,11 +2,6 @@
 
 # create users
 rm -rf $HOME/.starsd
-starsd config chain-id localnet-1
-starsd config keyring-backend test
-starsd config output json
-# setup chain
-starsd init stargaze --chain-id localnet-1
 # modify config for development
 config="$HOME/.starsd/config/config.toml"
 if [ "$(uname)" = "Linux" ]; then
